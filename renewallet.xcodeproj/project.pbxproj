@@ -11,7 +11,6 @@
 		180B8EBE29FC09890039FD09 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180B8EBD29FC09890039FD09 /* ContentView.swift */; };
 		180B8EC029FC098C0039FD09 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 180B8EBF29FC098C0039FD09 /* Assets.xcassets */; };
 		180B8EC329FC098C0039FD09 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 180B8EC229FC098C0039FD09 /* Preview Assets.xcassets */; };
-		180B8EC529FC098C0039FD09 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180B8EC429FC098C0039FD09 /* Persistence.swift */; };
 		180B8EC829FC098C0039FD09 /* renewallet.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 180B8EC629FC098C0039FD09 /* renewallet.xcdatamodeld */; };
 		180B8ED229FC098C0039FD09 /* renewalletTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180B8ED129FC098C0039FD09 /* renewalletTests.swift */; };
 		180B8EDC29FC098C0039FD09 /* renewalletUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180B8EDB29FC098C0039FD09 /* renewalletUITests.swift */; };
@@ -19,6 +18,8 @@
 		18F820EA29FD1DB200DB0848 /* screen_dimensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F820E929FD1DB200DB0848 /* screen_dimensions.swift */; };
 		18F820ED29FD1F3000DB0848 /* custom_text.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F820EC29FD1F3000DB0848 /* custom_text.swift */; };
 		18F820F029FD37C300DB0848 /* login_view.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F820EF29FD37C300DB0848 /* login_view.swift */; };
+		18F820F229FD450900DB0848 /* navigation_button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F820F129FD450900DB0848 /* navigation_button.swift */; };
+		18F820F529FD48E700DB0848 /* custom_textfield.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F820F429FD48E700DB0848 /* custom_textfield.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,7 +45,6 @@
 		180B8EBD29FC09890039FD09 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		180B8EBF29FC098C0039FD09 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		180B8EC229FC098C0039FD09 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		180B8EC429FC098C0039FD09 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		180B8EC729FC098C0039FD09 /* renewallet.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = renewallet.xcdatamodel; sourceTree = "<group>"; };
 		180B8ECD29FC098C0039FD09 /* renewalletTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = renewalletTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		180B8ED129FC098C0039FD09 /* renewalletTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = renewalletTests.swift; sourceTree = "<group>"; };
@@ -54,6 +54,8 @@
 		18F820E929FD1DB200DB0848 /* screen_dimensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = screen_dimensions.swift; sourceTree = "<group>"; };
 		18F820EC29FD1F3000DB0848 /* custom_text.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = custom_text.swift; sourceTree = "<group>"; };
 		18F820EF29FD37C300DB0848 /* login_view.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = login_view.swift; sourceTree = "<group>"; };
+		18F820F129FD450900DB0848 /* navigation_button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = navigation_button.swift; sourceTree = "<group>"; };
+		18F820F429FD48E700DB0848 /* custom_textfield.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = custom_textfield.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,13 +106,13 @@
 		180B8EBA29FC09890039FD09 /* renewallet */ = {
 			isa = PBXGroup;
 			children = (
+				18F820F329FD471F00DB0848 /* models */,
 				18F820EE29FD379700DB0848 /* views */,
 				18F820E829FD1D7600DB0848 /* utilities */,
 				180B8EBB29FC09890039FD09 /* renewalletApp.swift */,
 				180B8EBD29FC09890039FD09 /* ContentView.swift */,
 				18F820EB29FD1E9B00DB0848 /* components */,
 				180B8EBF29FC098C0039FD09 /* Assets.xcassets */,
-				180B8EC429FC098C0039FD09 /* Persistence.swift */,
 				180B8EC629FC098C0039FD09 /* renewallet.xcdatamodeld */,
 				180B8EC129FC098C0039FD09 /* Preview Content */,
 			);
@@ -154,6 +156,8 @@
 			isa = PBXGroup;
 			children = (
 				18F820EC29FD1F3000DB0848 /* custom_text.swift */,
+				18F820F129FD450900DB0848 /* navigation_button.swift */,
+				18F820F429FD48E700DB0848 /* custom_textfield.swift */,
 			);
 			path = components;
 			sourceTree = "<group>";
@@ -164,6 +168,13 @@
 				18F820EF29FD37C300DB0848 /* login_view.swift */,
 			);
 			path = views;
+			sourceTree = "<group>";
+		};
+		18F820F329FD471F00DB0848 /* models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -298,9 +309,10 @@
 			files = (
 				18F820EA29FD1DB200DB0848 /* screen_dimensions.swift in Sources */,
 				18F820F029FD37C300DB0848 /* login_view.swift in Sources */,
-				180B8EC529FC098C0039FD09 /* Persistence.swift in Sources */,
 				180B8EBE29FC09890039FD09 /* ContentView.swift in Sources */,
 				180B8EC829FC098C0039FD09 /* renewallet.xcdatamodeld in Sources */,
+				18F820F529FD48E700DB0848 /* custom_textfield.swift in Sources */,
+				18F820F229FD450900DB0848 /* navigation_button.swift in Sources */,
 				180B8EBC29FC09890039FD09 /* renewalletApp.swift in Sources */,
 				18F820ED29FD1F3000DB0848 /* custom_text.swift in Sources */,
 			);

@@ -6,15 +6,13 @@
 //
 
 import SwiftUI
-import CoreData
 
 struct ContentView: View {
-    @State private var name = "Be";
-    func changeName() -> Void{
-        name = "Ada";
-    }
+   
+   
     var body: some View {
         NavigationView{
+            
             ZStack{
                 Color(.white)
                 VStack(spacing:10){
@@ -27,7 +25,7 @@ struct ContentView: View {
                             height:  UIScreen.screenHeight/3)
                     
                     CustomText(
-                        data: "\(name) better with money.", fontSize: 40, color: Color("purple"),
+                        data: "Be better with money.", fontSize: 40, color: Color("purple"),
                         fontWeight: .bold
                     ).padding(.leading, 25)
                     
@@ -38,21 +36,7 @@ struct ContentView: View {
                     ).padding(.leading, 25)
                     Spacer()
                     
-                    NavigationLink{
-                        LoginView()
-                    }label: {
-                        Text("Get started")
-                            .font(.system(size: 20, weight: .bold))
-                            .foregroundColor(.white)
-                        
-                        
-                            .frame(width: UIScreen.screenWidth/1.5, height: 50)
-                            .background(Color("purple"))
-                            .cornerRadius(10)
-                            .padding(.top, 10)
-                        
-                        
-                    }
+                  NavigationButton()
                 }
             }
         }
@@ -62,6 +46,7 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView().environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
+        ContentView()
     }
 }
+

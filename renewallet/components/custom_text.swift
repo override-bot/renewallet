@@ -16,7 +16,7 @@ struct CustomText: View {
                 Text(data)
                     .font(.system(size: fontSize, weight: fontWeight ))
                     .foregroundColor(color)
-                    .padding(.top).frame(
+                    .frame(
                         width: UIScreen.main.bounds.width,
                         alignment: .leading
                     )
