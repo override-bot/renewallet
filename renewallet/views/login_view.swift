@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct LoginView: View {
+    @StateObject var userViewmodel = UserViewmodel()
+    @State private var email = ""
     var body: some View {
         ZStack{
             Color(.white)
@@ -30,9 +32,25 @@ struct LoginView: View {
                     data:"Please enter your details to login to your Renewallet account", fontSize: 20, color: Color("purpleGrey"),
                     fontWeight: .regular
                 ).padding(.leading, 25)
-                Spacer()
                 
-             
+                
+                HStack{
+                    Text("Email:").foregroundColor(Color("purpleGrey"))
+                    
+                    TextField("wisdomzilla13@gmail.com", text: $email)
+                        .foregroundColor(Color("purpleGrey"))
+                        .padding(10)
+                        .frame(height: 50)
+                        .textFieldStyle(.roundedBorder)
+                        .padding(EdgeInsets(top: 0, leading: 20, bottom: 0, trailing: 20))
+                       
+                        
+                        
+                        
+                       
+                }.frame(width: UIScreen.screenWidth)
+                .padding(.leading, 25)
+                Spacer()
             }
         }.navigationBarBackButtonHidden()
     }

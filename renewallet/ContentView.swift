@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
    
-   
+   @StateObject var userViewmodel = UserViewmodel()
     var body: some View {
         NavigationView{
             
@@ -25,7 +25,7 @@ struct ContentView: View {
                             height:  UIScreen.screenHeight/3)
                     
                     CustomText(
-                        data: "Be better with money.", fontSize: 40, color: Color("purple"),
+                        data: "Get better with money.", fontSize: 40, color: Color("purple"),
                         fontWeight: .bold
                     ).padding(.leading, 25)
                     
@@ -37,6 +37,7 @@ struct ContentView: View {
                     Spacer()
                     
                   NavigationButton()
+                    
                 }
             }
         }
